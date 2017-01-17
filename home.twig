@@ -49,14 +49,6 @@ nunc, eget mollis nulla malesuada quis.</p>'})|raw}}
 			</div>
 		</div>
 		
-		<div class="row main-content__banner-spot">
-			<div class="small-12 columns">
-				<a href="http://weddingchamber.vegas/" target="_new" rel="nofollow">
-					<img src="{{asset('images/web-banner-728-x-90.png')}}" alt="Destination Vegas!  Your day, your way.  Wedding Chamber in Las Vegas." />
-				</a>
-			</div>
-		</div>
-		
 		<div class="row collapse">
 			{{widget('gallery', 'imagegallery', {
 			  'showTitle': true,
@@ -85,7 +77,7 @@ nunc, eget mollis nulla malesuada quis.</p>'})|raw}}
 				<p>
 					{% if profile.phone %}T. {{ profile.phone }}<br />{% endif %}
 					{% if profile.email %}E. {{ profile.email }}<br />{% endif %}
-					{% if profile.address %}A. {{ profile.address1 }} {{ profile.address2 }} {{ profile.postalcode }}{% endif %}
+					{% if profile.address %}A. {{widget('companyaddress', 'featureaddress', {})|raw}}{% endif %}
 				</p>
 			</div>
 			<div class="small-12 medium-6 columns">
