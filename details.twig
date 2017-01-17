@@ -1,0 +1,17 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+	
+	<section class="our-story">
+		<div class="row">
+			<div class="small-12 columns">
+				{{widget('pagetitle', 'title', {})|raw}}
+			</div>
+		</div>
+		<div class="row collapse">
+			<div class="small-12 columns">
+				{{zone('main')|raw}}
+			</div>
+	</section>
+ 
+{% endblock %}
