@@ -10,9 +10,7 @@
 		  			{{widget('feature', 'featurehome', {
 			        'defaultBgImg': asset("images/feature-t4.jpg"),
 			        'positionTopPercentage': '0',
-			        'header': '{{ profile.headline }}',
-		  				'strapline': '{{ profile.strapline }}',
-		  				'showBtn': false
+	  				'showBtn': false
 				    })|raw}}
 		    </div>
 	  	</div>
@@ -35,7 +33,7 @@
 			</div>
 		</div>
 		<div class="row">
-	 		<div class="small-12 columns text-center">
+	 		<div class="small-12 columns">
 	 			{{widget('content', 'maincolumn', {content:'<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pharetra dapibus pharetra. Donec interdum eros eu
 turpis pharetra et hendrerit est ornare. Etiam eu nulla sapien. Nullam ultricies posuere nunc, eget mollis nulla malesuada
 quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pharetra dapibus pharetra.</p><p>Donec interdum eros eu turpis pharetra et hendrerit est ornare. Etiam eu nulla sapien. Nullam ultricies posuere
@@ -77,7 +75,6 @@ nunc, eget mollis nulla malesuada quis.</p>'})|raw}}
 				<p>
 					{% if profile.phone %}T. {{ profile.phone }}<br />{% endif %}
 					{% if profile.email %}E. {{ profile.email }}<br />{% endif %}
-					{% if profile.address %}A. {{widget('companyaddress', 'featureaddress', {})|raw}}{% endif %}
 				</p>
 			</div>
 			<div class="small-12 medium-6 columns">
