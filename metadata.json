@@ -243,7 +243,7 @@
           "font__feature-strapline--font-family" : "@font-swatch8-font-family",
           "font__feature-strapline--font-size" : "0.9em",
           "font__feature-strapline--font-weight" : "400",
-          "font__feature-strapline--line-height" : "1.75em",
+          "font__feature-strapline--line-height" : "1.25em",
           "font__feature-strapline--letter-spacing" : "0.25em"
       },
       "forms": {
